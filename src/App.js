@@ -10,7 +10,7 @@ import PlaybackCard from 'src/containers/PlaybackCard'
 import { itemsSearchRequest } from 'src/store/actions'
 import { getList, getIsLoading } from 'src/store/selectors'
 
-class App extends Component {
+export class App extends Component {
   state = {
     track: null,
     index: null,

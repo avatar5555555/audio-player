@@ -7,6 +7,7 @@
 * [create-react-app](https://github.com/facebookincubator/create-react-app)
 * [yarn](https://yarnpkg.com/en/docs)
 * [styled-components](https://www.styled-components.com/docs)
+* [react-intl](https://github.com/yahoo/react-intl)
 
 # Code style, linting
 * [Prettier](https://github.com/prettier/prettier)
