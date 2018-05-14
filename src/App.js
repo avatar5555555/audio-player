@@ -154,6 +154,7 @@ export class App extends Component {
     const { track, volumeLevel, currentTime, isMuted, isPlaying } = this.state
 
     const currentUrl = track ? track.previewUrl : ''
+    const currentTrackId = track ? track.trackId : ''
     const duration =
       this.audioRef && this.audioRef.current && this.audioRef.current.duration
         ? this.audioRef.current.duration
@@ -184,6 +185,7 @@ export class App extends Component {
               items={items}
               selectTrack={this.handleSelect}
               isLoading={isLoading}
+              currentTrackId={currentTrackId}
             />
           </Col>
         </Row>

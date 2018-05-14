@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-import List from 'src/components/List'
-import Spinner from 'src/components/Spinner'
+import { List, Spinner } from 'src/components'
 
 class PlayList extends Component {
   handleSelect = id => {
@@ -20,12 +19,16 @@ class PlayList extends Component {
   }
 
   render() {
-    const { items, isLoading } = this.props
+    const { items, isLoading, currentTrackId } = this.props
 
     return isLoading ? (
       <Spinner />
     ) : (
-      <List items={items} onSelect={this.handleSelect} />
+      <List
+        items={items}
+        onSelect={this.handleSelect}
+        currentTrackId={currentTrackId}
+      />
     )
   }
 }
@@ -33,11 +36,13 @@ class PlayList extends Component {
 PlayList.propTypes = {
   items: PropTypes.array,
   isLoading: PropTypes.bool.isRequired,
-  selectTrack: PropTypes.func.isRequired
+  selectTrack: PropTypes.func.isRequired,
+  currentTrackId: PropTypes.string
 }
 
 PlayList.defaultProps = {
-  items: []
+  items: [],
+  currentTrackId: ''
 }
 
 export default PlayList

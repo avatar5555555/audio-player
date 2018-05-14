@@ -2,11 +2,13 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import PlaybackControl from 'src/components/PlaybackControl'
-import VolumeControl from 'src/components/VolumeControl'
-import Icon from 'src/components/Icon'
-import Playback from 'src/components/Playback'
-import SearchBar from 'src/components/SearchBar'
+import {
+  PlaybackControl,
+  VolumeControl,
+  Icon,
+  Playback,
+  SearchBar
+} from 'src/components'
 
 const Root = styled.div`
   display: flex;
