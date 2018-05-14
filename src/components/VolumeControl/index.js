@@ -4,8 +4,7 @@ import styled from 'styled-components'
 import Progress from 'reactstrap/lib/Progress'
 import Button from 'reactstrap/lib/Button'
 
-import Icon from './Icon'
-
+import Icon from 'src/components/Icon'
 import config from 'src/config'
 
 const StyledProgress = styled(Progress)`

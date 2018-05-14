@@ -8,7 +8,8 @@ module.exports = {
     beforeAll: true,
     afterAll: true,
     beforeEach: true,
-    afterEach: true
+    afterEach: true,
+    describe: true
   },
   extends: [
     'plugin:import/errors',

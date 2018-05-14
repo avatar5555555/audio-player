@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Icon match all icons snapshots 1`] = `
+<styled.div
+  small={true}
+>
+  <Play
+    className="d-flex"
+  />
+</styled.div>
+`;
+
+exports[`Icon match all icons snapshots 2`] = `
+<styled.div
+  small={true}
+>
+  <Pause
+    className="d-flex"
+  />
+</styled.div>
+`;
+
+exports[`Icon match all icons snapshots 3`] = `
+<styled.div
+  small={true}
+>
+  <Forward
+    className="d-flex"
+  />
+</styled.div>
+`;
+
+exports[`Icon match all icons snapshots 4`] = `
+<styled.div
+  small={true}
+>
+  <Backward
+    className="d-flex"
+  />
+</styled.div>
+`;
+
+exports[`Icon match all icons snapshots 5`] = `
+<styled.div
+  small={true}
+>
+  <Volume
+    className="d-flex"
+  />
+</styled.div>
+`;
+
+exports[`Icon match all icons snapshots 6`] = `
+<styled.div
+  small={true}
+>
+  <Cross
+    className="d-flex"
+  />
+</styled.div>
+`;
+
+exports[`Icon match all icons snapshots 7`] = `
+<styled.div
+  small={true}
+>
+  <Cd
+    className="d-flex"
+  />
+</styled.div>
+`;
+
+exports[`Icon match all icons snapshots 8`] = `
+<styled.div
+  small={true}
+>
+  <Stop
+    className="d-flex"
+  />
+</styled.div>
+`;
+
+exports[`Icon match null snapshot 1`] = `""`;

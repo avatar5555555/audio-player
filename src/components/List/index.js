@@ -17,7 +17,7 @@ const MessageRoot = styled.div`
   }
 `
 
-const List = ({ items, onSelect }) => {
+const List = ({ items, onSelect, currentTrackId }) => {
   const notFound = items.length === 0
 
   return notFound ? (
@@ -31,8 +31,8 @@ const List = ({ items, onSelect }) => {
           { artistId, trackId, trackName, artistName, trackTimeMillis },
           index
         ) => {
-          const isEven = index % 2 === 1
-          const itemColor = isEven ? 'primary' : 'white'
+          const isCurrentTrack = currentTrackId === trackId
+          const itemColor = isCurrentTrack ? 'primary' : 'white'
 
           return (
             <ListGroupItem
@@ -55,11 +55,13 @@ const List = ({ items, onSelect }) => {
 
 List.propTypes = {
   items: PropTypes.array,
-  onSelect: PropTypes.func.isRequired
+  onSelect: PropTypes.func.isRequired,
+  currentTrackId: PropTypes.string
 }
 
 List.defaultProps = {
-  items: []
+  items: [],
+  currentTrackId: ''
 }
 
 export default List
