@@ -1,6 +1,6 @@
-##Audio-player on react
+## Audio-player on react
 
-#Uses next libraries and frameworks
+# Uses next libraries and frameworks
 * [react 16](https://reactjs.org)
 * [bootstrap 4](http://getbootstrap.com/docs/4.0/getting-started/introduction/)
 * [reactstrap](https://reactstrap.github.io)
